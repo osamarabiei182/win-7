@@ -31,7 +31,7 @@ spec:
         image: dockurr/windows
         env:
         - name: VERSION
-          value: "11"
+          value: "10e"
         - name: DISK_SIZE
           value: "64G"
         ports:
@@ -59,7 +59,7 @@ spec:
           name: dev-kvm
         - mountPath: /dev/net/tun
           name: dev-tun
-      terminationGracePeriodSeconds: 120
+      terminationGracePeriodSeconds: 540
       volumes:
       - name: storage
         persistentVolumeClaim:
